@@ -835,17 +835,15 @@
 
       // 【改造ネタ 2】ダークモードに切り替える
       //   まず body エリアのメニューに次のボタンを足す：
-      <button id="theme-btn" class="btn btn-ghost">
-        🌙
-      </button>;
-      document.getElementById("theme-btn").addEventListener("click", () => {
-        const r = document.documentElement;
-        const dark = r.style.getPropertyValue("--bg-color") === "#1b1f24";
-        r.style.setProperty("--bg-color", dark ? "#fbfcfc" : "#1b1f24");
-        r.style.setProperty("--soft-color", dark ? "#f1f7f7" : "#242a31");
-        r.style.setProperty("--text-color", dark ? "#333c42" : "#e8edf0");
-        r.style.setProperty("--dark-color", dark ? "#1f2b33" : "#f5f8fa");
-      });
+      //   <button id="theme-btn" class="btn btn-ghost">🌙</button>
+      // document.getElementById("theme-btn").addEventListener("click", () => {
+      //   const r = document.documentElement;
+      //   const dark = r.style.getPropertyValue("--bg-color") === "#1b1f24";
+      //   r.style.setProperty("--bg-color",   dark ? "#fbfcfc" : "#1b1f24");
+      //   r.style.setProperty("--soft-color", dark ? "#f1f7f7" : "#242a31");
+      //   r.style.setProperty("--text-color", dark ? "#333c42" : "#e8edf0");
+      //   r.style.setProperty("--dark-color", dark ? "#1f2b33" : "#f5f8fa");
+      // });
     </script>
   </body>
 </html>
